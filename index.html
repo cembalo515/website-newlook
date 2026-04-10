@@ -1,11 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salon NEW LOOK</title>
+    <title>Salon Name | Ihr Friseur in Stadt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <nav class="navbar">
+        <img src="graphics/newlook_logo_clearbg.png" class = "logo">
+
+        <ul class="nav-links">
+            <li><a href="#home">Startseite</a></li>
+            <li><a href="#about">Über Uns</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="slideshow-container">
+            <img src="graphics/stock01.jpg" alt="Friseursalon Innenansicht">
+            <div class="hero-text">
+                <h1>Haarkunst & Entspannung</h1>
+                <p>Dein Style ist unser Handwerk.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="intro">
+            <h2>Willkommen</h2>
+            <p>Erleben Sie erstklassige Haarschnitte, brillante Farben und individuelles Styling in einer Wohlfühlatmosphäre. Unser Team legt Wert auf Typberatung und modernste Techniken, um Ihre natürliche Schönheit zu unterstreichen.</p>
+        </section>
+
+        <section class="news">
+            <h3>Aktuelles & Neuigkeiten</h3>
+            <article class="news-item">
+                <span class="date">10. April 2026</span>
+                <h4>Frühlings-Specials verfügbar!</h4>
+                <p>Ab sofort bieten wir neue Balayage-Techniken für den perfekten Sommerlook an. Vereinbaren Sie jetzt Ihren Termin.</p>
+            </article>
+        </section>
+
+        <section id="gallery" class="gallery-preview">
+            <h3>Einblicke in unsere Arbeit</h3>
+            <div class="grid">
+                <img src="https://via.placeholder.com/300x300?text=Schnitt+1" alt="Haarschnitt 1">
+                <img src="https://via.placeholder.com/300x300?text=Farbe+1" alt="Haarfarbe 1">
+                <img src="https://via.placeholder.com/300x300?text=Styling+1" alt="Styling 1">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Kontakt & Adresse</h4>
+                <p><strong>Salon Name</strong></p>
+                <p>Inhaber: Max Mustermann</p>
+                <p>Musterstraße 12, 12345 Musterstadt</p>
+                <p>Tel: <a href="tel:+49123456789">0123 / 456 789</a></p>
+                <p>E-Mail: <a href="mailto:info@salon-name.de">info@salon-name.de</a></p>
+            </div>
+            <div class="legal-links">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="#">Impressum</a></li>
+                    <li><a href="#">AGB & Disclaimer</a></li>
+                    <li><a href="#">Datenschutz</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Salon Name. Alle Rechte vorbehalten.
+        </div>
+    </footer>
+
 </body>
 </html>
