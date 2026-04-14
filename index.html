@@ -1,88 +1,197 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Look | Ihr Friseur in Steinfurt</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salon New Look – Ihr Frisörsalon</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <nav class="navbar">
-        <img src="graphics/newlook_logo_clearbg.png" class = "logo">
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <!-- Logo einbinden: <img src="logo.png" alt="Salon Élégance Logo" class="logo-img"> -->
+      <img src = "graphics/newlook_logo_clearbg.png" alt = "New Look Logo" class = "logo-img">
+      <span class="salon-name">Salon New Look</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Startseite</a></li>
+      <li><a href="preisliste.html">Preisliste</a></li>
+      <li><a href="about.html">Über uns</a></li>
+      <li><a href="gallery.html">Galerie</a></li>
+    </ul>
+  </nav>
 
-        <ul class="nav-links">
-            <li><a href="#home">Startseite</a></li>
-            <li><a href="#about">Über Uns</a></li>
-            <li><a href="#gallery">Galerie</a></li>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">Ihr Salon im Herzen der Stadt</div>
+    <h1>Schönheit beginnt bei uns</h1>
+        <p>Professionelle Haarschnitte, Färbungen und Haarpflege - für ein Ergebnis, das Sie stralen lässt.</p>
+    <div class="hero-btns">
+      <button class="btn-primary">Termin buchen</button>
+      <button class="btn-outline">Preisliste ansehen</button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">Unsere Leistungen</div>
+      <h2>Was wir für Sie tun</h2>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7B5EA7" stroke-width="1.5">
+              <path d="M9.5 3L6 8l3.5 2L6 21M14.5 3L18 8l-3.5 2L18 21" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Schnitt &amp; Styling</h3>
+          <p>Klassische und moderne Schnitte für Damen und Herren.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7B5EA7" stroke-width="1.5">
+              <circle cx="12" cy="12" r="8"/>
+              <path d="M12 8v4l3 3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Coloration</h3>
+          <p>Highlights, Balayage, Vollcoloration — in Ihrer Wunschfarbe.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7B5EA7" stroke-width="1.5">
+              <path d="M12 2c0 0-5 4-5 9a5 5 0 0010 0c0-5-5-9-5-9z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Haarpflege</h3>
+          <p>Tiefenpflege, Keratin und Kuren für gesundes Haar.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#7B5EA7" stroke-width="1.5">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Braut &amp; Festlich</h3>
+          <p>Hochsteckfrisuren und festliche Styles für besondere Anlässe.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <div class="divider"></div>
+
+  <!-- TEAM -->
+  <section class="section alt-bg">
+    <div class="section-inner">
+      <div class="section-label">Unser Team</div>
+      <h2>Die Menschen hinter dem Salon</h2>
+      <div class="team-grid">
+
+        <div class="team-card">
+          <div class="team-photo"><div class="team-initials">BZ</div></div>
+          <div class="team-info">
+            <strong>Birgit Zurstegge-Yüksel</strong>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo"><div class="team-initials">NK</div></div>
+          <div class="team-info">
+            <strong>Nicole Konkel</strong>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-photo"><div class="team-initials">MZ</div></div>
+          <div class="team-info">
+            <strong>Maren Zacheja</strong>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- HOURS & CONTACT -->
+  <section class="section">
+    <div class="section-inner info-grid">
+
+      <div>
+        <div class="section-label">Öffnungszeiten</div>
+        <h2>Wann wir für Sie da sind</h2>
+        <div class="hours-grid">
+          <span class="hours-day">Montag</span>         <span class="hours-time">Geschlossen</span>
+          <span class="hours-day">Dienstag</span>       <span class="hours-time">09:00 – 18:00</span>
+          <span class="hours-day">Mittwoch</span>       <span class="hours-time">09:00 – 18:00</span>
+          <span class="hours-day">Donnerstag</span>     <span class="hours-time">09:00 – 19:00</span>
+          <span class="hours-day">Freitag</span>        <span class="hours-time">09:00 – 18:00</span>
+          <span class="hours-day">Samstag</span>        <span class="hours-time">09:00 – 13:00</span>
+          <span class="hours-day">Sonntag</span>        <span class="hours-time">Geschlossen</span>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label">Kontakt</div>
+        <h2>So erreichen Sie uns</h2>
+        <ul class="contact-list">
+          <li>📍 Burgstraße 4, 48565 Steinfurt</li>
+          <li>📞 <a href="tel:+4925517439">02551 / 7439</a></li>
+          <li>✉️ <a href="mailto:info@salon-newlook.de">info@salon-newlook.de</a></li>
         </ul>
-    </nav>
+      </div>
 
-    <header id="home" class="hero">
-        <div class="slideshow-container">
-            <img src="graphics/stock01.jpg" alt="Friseursalon Innenansicht">
-            <div class="hero-text">
-                <h1>Haarkunst & Entspannung</h1>
-                <p>Ihr Style ist unser Handwerk.</p>
-            </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <h4>Salon New Look</h4>
+          <p>Burgstraße 4</p>
+          <p>48565 Steinfurt</p>
+          <p>02551 / 7439</p>
+          <p>info@salon-newlook.de</p>
         </div>
-    </header>
 
-    <main class="container">
-        
-        <section class="intro">
-            <h2>Willkommen</h2>
-            <p>Erleben Sie erstklassige Haarschnitte, brillante Farben und individuelles Styling in einer Wohlfühlatmosphäre. Unser Team legt Wert auf Typberatung und modernste Techniken, um Ihre natürliche Schönheit zu unterstreichen.</p>
-        </section>
-
-        <section class="news">
-            <h3>Aktuelles & Neuigkeiten</h3>
-            <article class="news-item">
-                <span class="date">10. April 2026</span>
-                <h4>Neue Haarfarben im Sortiment!</h4>
-                <p>Ab sofort benutzen wir Haarfarben von XYZ! Diese sind 100% natürlich und haben ein viel geringeres Alergikerrisiko!</p>
-            </article>
-            <article class="news-item">
-                <span class="date">08. April 2026</span>
-                <h4>Neue Website!</h4>
-                <p>Von nun an sind wir für Sie auch wieder im Internet verfügbar - dieses Mal modern und passend zu unserer Atmosphäre.</p>
-            </article>
-        </section>
-
-        <section id="gallery" class="gallery-preview">
-            <h3>Einblicke in unsere Arbeit</h3>
-            <div class="grid">
-                <img src="https://via.placeholder.com/300x300?text=Schnitt+1" alt="Haarschnitt 1">
-                <img src="https://via.placeholder.com/300x300?text=Farbe+1" alt="Haarfarbe 1">
-                <img src="https://via.placeholder.com/300x300?text=Styling+1" alt="Styling 1">
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="contact-info">
-                <h4>Kontakt & Adresse</h4>
-                <p><strong>Salon NEW LOOK</strong></p>
-                <p>Inhaber: Birgit Zurstegge-Yüksel</p>
-                <p>Burgstraße 4, 48565 Steinfurt-Burgsteinfurt</p>
-                <p>Tel: <a href="tel:+4925517439">02551 / 7439</a></p>
-                <p>E-Mail: <a href="mailto:info@salon-newlook.de">info@salon-newlook.de</a></p>
-            </div>
-            <div class="legal-links">
-                <h4>Rechtliches</h4>
-                <ul>
-                    <li><a href="#">Impressum</a></li>
-                    <li><a href="#">AGB & Disclaimer</a></li>
-                    <li><a href="#">Datenschutz</a></li>
-                </ul>
-            </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#">Startseite</a>
+          <a href="#">Preisliste</a>
+          <a href="#">Über uns</a>
+          <a href="#">Galerie</a>
         </div>
-        <div class="footer-bottom">
-            &copy; 2026 Salon New Look. Alle Rechte vorbehalten.
+
+        <div class="footer-col">
+          <h4>Rechtliches</h4>
+          <a href="legal.html#impressum">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+          <a href="legal.html#agb">AGB</a>
         </div>
-    </footer>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Salon New Look. Alle Rechte vorbehalten.</p>
+        <div class="footer-legal-links">
+          <a href="legal.html#impressum">Impressum</a>
+          <a href="legal.html#datenschutz">Datenschutz</a>
+          <a href="legal.html#agb">AGB</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
